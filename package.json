@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/nodemon index.js",
-    "eslint": "./node_modules/.bin/eslint --format codeframe .",
+    "lint:eslint": "./node_modules/.bin/eslint --format codeframe .",
     "lint": "npm run puglint && npm run eslint",
     "lint:fix": "./node_modules/.bin/eslint --fix --format codeframe .",
-    "puglint": "./node_modules/.bin/pug-lint ."
+    "lint:puglint": "./node_modules/.bin/pug-lint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,9 @@
     "eslint": "^6.8.0",
     "nodemon": "^2.0.3",
     "pug-lint": "^2.6.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
   }
 }

@@ -3,14 +3,14 @@ html
     title TV Synopsis
     link(rel="stylesheet" href="/css/styles.css")
 body
-  h1 = title
-    h2 Developed by
-    for developedBy in showdata
-    ul
-      li showdata.developedBy
-    h2 Starring
-    ul
-      li = starring
-    h2 Seasons
-    ul
-      li = a(href=`/showdata/${seasons.number}`)= movie.title
+  h1= showdata.title
+      h2 Developed by:
+        ul
+          li= showdata.developedBy
+      h2 Starring:
+        ul
+          li= showdata.starring
+      h2 Seasons:
+        ul
+          li
+            a(href=`/showdata/${showdata.seasons}`)= showdata.seasons[title]
