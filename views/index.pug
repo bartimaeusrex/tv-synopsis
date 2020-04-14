@@ -1,17 +1,15 @@
 html
-  head
-    title TV Synopsis
-    link(rel="stylesheet" href="/css/styles.css")
-body
-  h1= showdata.title
-  div(class="bodyindent")
-    h2 Developed by:
-    for developer in showdata.developedBy
-      li= developer
-    h2 Starring:
-    for star in showdata.starring
-      li= star
-    h2 Seasons:
-    for season in showdata.seasons
-      li
-        a(href=`/season/${season.number}`) Season #{season.number}
+  include partials/head
+  body
+    h1= showdata.title
+    div.bodyindent
+      h2 Developed by:
+      for developer in showdata.developedBy
+        li= developer
+      h2 Starring:
+      for star in showdata.starring
+        li= star
+      h2 Seasons:
+      for season in showdata.seasons
+        li
+          a(href=`/season/${season.number}`) Season #{season.number}
