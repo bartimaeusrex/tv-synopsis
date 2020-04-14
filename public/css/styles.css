@@ -1,10 +1,41 @@
-
 table {
   width:70%;
-  margin 0 auto;
+  margin: 0 auto;
+  border-collapse: collapse;
+  padding:10px;
 }
 
 th {
-  background-color:rgb(87, 106, 190);
+  background-color:#6F91EB;
   color:rgb(255, 255, 255);
+  text-align:center;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.bodyindent {
+  margin-left:25px;
+}
+
+li {
+  font-size:20px;
+}
+
+.seasonheader {
+  margin: 0 auto;
+}
+
+.epnum {
+  width: 5%;
+  text-align:center;
+}
+
+.eptitle {
+  width: 65%;
+}
+
+.epdirector {
+  width: 30%;
 }
