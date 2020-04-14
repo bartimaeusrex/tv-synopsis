@@ -3,34 +3,17 @@ html
     title TV Synopsis - Seasons
     link(rel="stylesheet" href="/css/styles.css")
 body
-  h1= title
-  h2(class="seasonheader")= number
+  h1= showdata.title
+  h2(class="seasonheader")= `Season ${season.number}`
   table
     tr(colspan=3 class="tableheader")
-      th(class="epnum") No.
-      th(class="eptitle") Title
-      th(class="epdirector") Director
+      th(class="col_num") No.
+      th(class="col_title") Title
+      th(class="col_director") Director
     for episode in season.episodes
       tr
-        td(class="epnum")= episode.number
-        td(class="eptitle")= episode.title
-        td(class="epdirector")= episode.director
-      tr(colspan=3)
-        td= episode.synopsis
-      
-  //- h1= title
-  //- h2(class='season-heading') Season #{season.number}
-  //- table
-  //-   thead
-  //-     tr
-  //-       th No.
-  //-       th Title
-  //-       th Director
-  //-   tbody    
-  //-    for episode in season.episodes
-  //-     tr
-  //-       td= episode.number
-  //-       td= episode.title
-  //-       td= episode.director
-  //-     tr
-  //-       td(colspan=3)= episode.synopsis
+        td.episodenumber= episode.number
+        td.episodetitle= episode.title
+        td= episode.director
+      tr
+        td(colspan=3)= episode.synopsis

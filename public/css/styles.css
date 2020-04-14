@@ -11,6 +11,11 @@ th {
   text-align:center;
 }
 
+td, tr, th {
+  padding:10px;
+  border:1px solid black;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,19 +28,25 @@ li {
   font-size:20px;
 }
 
-.seasonheader {
-  margin: 0 auto;
+.seasonheader, .episodenumber {
+  text-align:center;
+  padding: 5px;
 }
 
-.epnum {
+.col_num {
   width: 5%;
   text-align:center;
 }
 
-.eptitle {
+.col_title {
   width: 65%;
 }
 
-.epdirector {
+.episodetitle {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.col_director {
   width: 30%;
 }
